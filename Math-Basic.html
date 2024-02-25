@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="Math-Basic.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Math Basic</title>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="menu" id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="Math-Basic.html">Math Basic</a></li>
+            <li><a href="trigonometry.html">Trigonometry</a></li>
+        </ul>
+    </div>
+    <h1>Math Basic</h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="clear">
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="&#x27A4;" onclick="deleteLast()">
+            <input type="button" value="&#10229;" onclick="moveCursorLeft()">
+            <input type="button" value="&#10230;" onclick="moveCursorRight()">
+        </div>
+    <div class="l1">
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+        <input type="button" value="(" onclick="addToDisplay('(')">
+        <input type="button" value=")" onclick="addToDisplay(')')">
+        <input type="button" value="&#8730;" onclick="addToDisplay('Math.sqrt(')">
+    </div>
+    <div class="l2">
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <input type="button" value="log" onclick="addToDisplay('Math.log(')">
+        <input type="button" value="&#176;" onclick="addToDisplay('Math.PI / 180 * ')">
+        <input type="button" value="e" onclick="addToDisplay('Math.exp(')">
+    </div>
+    <div class="l3">
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+        <input type="button" value="&#8508;" onclick="addToDisplay('Math.PI')">
+        <input type="button" value="x!" onclick="factorial()">
+        <input type="button" value="^" onclick="addToDisplay('**')">
+    </div>
+    <div class="l4">
+        <input type="button" value="." onclick="addToDisplay('.')">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        <input type="button" value="&#60;" onclick="addToDisplay('<')">
+        <input type="button" value="&#62;" onclick="addToDisplay('>')">
+        <input type="button" value="|x|" onclick="absoluteValue()">
+    </div>
+    </div>
+</body>
+</html>

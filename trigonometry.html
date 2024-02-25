@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="trigonometry.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Trigonometry</title>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="menu" id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="Math-Basic.html">Math Basic</a></li>
+            <li><a href="trigonometry.html">Trigonometry</a></li>
+        </ul>
+    </div>
+    <h1>Trigonometry</h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="clear">
+            <input type="button" value="C" onclick="clearDisplay()">
+            <input type="button" value="&#x27A4;" onclick="deleteLast()">
+            <input type="button" value="&#10229;" onclick="moveCursorLeft()">
+            <input type="button" value="&#10230;" onclick="moveCursorRight()">
+        </div>
+    <div class="l1">
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+        <input type="button" value="sin" onclick="trigFunction('sin')">
+        <input type="button" value="cos" onclick="trigFunction('cos')">
+        <input type="button" value="tan" onclick="trigFunction('tan')">
+    </div>
+    <div class="l2">
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <input type="button" value="csc" onclick="trigFunction('csc')">
+        <input type="button" value="sec" onclick="trigFunction('sec')">
+        <input type="button" value="cot" onclick="trigFunction('cot')">
+    </div>
+    <div class="l3">
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+        <input type="button" value="sinh" onclick="trigFunction('sinh')">
+        <input type="button" value="cosh" onclick="trigFunction('cosh')">
+        <input type="button" value="tanh" onclick="trigFunction('tanh')">
+    </div>
+    <div class="l4">
+        <input type="button" value="." onclick="addToDisplay('.')">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        <input type="button" value="arcsin" onclick="inverseTrigFunction('arcsin')">
+        <input type="button" value="arccos" onclick="inverseTrigFunction('arccos')">
+        <input type="button" value="arctan" onclick="inverseTrigFunction('arctan')">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    background-color: #c08f6c;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #4e2f1a;
+}
+
+i{
+    color: #4e2f1a;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 80px;
+    bottom: 30px;
+    left: -50px; /* Initial position */
+    width: 180px;
+    height: 100%;
+    background-color: #dbb9a3;
+    border: 1px solid #4e2f1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 0.3s ease;
+}
+
+h2{
+    color: #4e2f1a;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+    border: 1px solid #4e2f1a;
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #4e2f1a;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #4e2f1a;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.menu ul li:hover {
+    background-color: #4e2f1a;
+}
+
+.menu ul li:hover a {
+    color: #dbb9a3;
+}
+
+.calculator {
+    width: 490px;
+    margin: 60px auto;
+    border: 2px solid #4e2f1a;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dbb9a3;
+}
+
+#display{
+    width: 470px;
+    position: relative;
+    border: 1px solid #4e2f1a;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+div .clear input{
+    width: 86px;
+    padding: 9px;
+    margin-top: 5px;
+    margin-left: 28px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #c08f6c;
+    color: white;
+    font-size: 18px;
+}
+
+input{
+    font-weight: bold;
+}
+
+div .l1 input{
+    width: 55px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 11px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #c08f6c;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+div .l2 input{
+    width: 55px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 11px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #c08f6c;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+div .l3 input{
+    width: 55px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 11px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #c08f6c;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+div .l4 input{
+    width: 55px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 11px;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #c08f6c;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
